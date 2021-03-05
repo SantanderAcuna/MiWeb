@@ -1,0 +1,96 @@
+:root {
+  --negro: #000000;
+  --blanco: #ffffff;
+  --oscuro: #0b0b0b;
+  --crema: #daf7a6;
+  --amarillo: #eccb13;
+  --naranja: #ff5733;
+}
+
+html {
+  font-size: 35%;
+  box-sizing: border-box;
+  min-height: 100%;
+  
+}
+
+*,
+*::before,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 3rem;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/* Barra de navegacion */
+.titulo {
+  text-align: center;
+  font-size: 4.8rem;
+  color: var(--negro);
+}
+
+.titulo span {
+  font-size: 6rem;
+  color: var(--amarillo);
+}
+
+span {
+  color: var(--blanco);
+}
+
+.nav_bg {
+  background-color: var(--negro);
+}
+
+.contenedor {
+  width: 120rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.navegacion_principal {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navegacion_principal a {
+  padding: 1rem;
+  color: var(--blanco);
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.navegacion_principal a:hover {
+  background-color: var(--amarillo);
+  color: var(--negro);
+  font-weight: 700;
+}
+
+.bordes {
+  border-top: var(--amarillo) 5px solid;
+}
+
+.hero {
+  height: 450px;
+  background-image: url("../img/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 480px) {
+  body {
+    background-color: var(--negro);
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background-color: var(--blanco);
+  }
+}
+
+/*    */
