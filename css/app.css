@@ -91,7 +91,44 @@ body {
   background-image: url("../img/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
+
+h2{
+
+  color: var(--blanco);
+
+}
+.contenido-hero, p{
+  color: var(--blanco);
+  font-weight: bold;
+}
+
+.contenido-hero a{
+
+  text-decoration: none;
+  color: var(--blanco);
+}
+
+.contenido-hero a:hover{
+ 
+  background-color: var(--amarillo);
+  color: var(--negro);
+  
+
+}
+
+.contenido-hero{
+position: absolute;
+background-color: rgba(0, 0, 0, .7);
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+
 
 
 
