@@ -16,7 +16,7 @@ html {
 /* hask model box  = con este codigo se le quita todos los bordes al html que viene definido por default*/
 
 *,
-*::before,
+*::after,
 *::before {
   box-sizing: inherit;
 }
@@ -24,7 +24,7 @@ html {
 body {
   font-size: rem;
   font-family: "Source Sans Pro", sans-serif;
-background-color: var(--blanco);
+  background-color: var(--blanco);
 }
 
 /* Tipografia */
@@ -179,8 +179,6 @@ p {
   align-items: flex-end;
 }
 
-
-
 /*Contenido    */
 .contenedor {
   margin: 0 auto;
@@ -190,24 +188,58 @@ p {
   padding: 2rem;
   margin-bottom: 3rem;
   background-color: rgba(255, 255, 255, 1);
-  border-radius: 10px;
-  -webkit-box-shadow: 0px 11px 15px -9px rgba(0,0,0,0.63);
-  -moz-box-shadow: 0px 11px 15px -9px rgba(0,0,0,0.63);
-  box-shadow: 0px 11px 15px -9px rgba(0,0,0,0.63);
+
+  -webkit-box-shadow: -1px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 0px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
-
-
-
-.servicios{
+.servicios {
   display: flex;
- justify-content: space-between;
- align-items: flex-end;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
-.servicio{
-height: 40rem;
-width: 40rem;
-margin: 4rem 4rem;
+.servicio {
+  height: 40rem;
+  width: 40rem;
+  margin: 4rem 4rem;
+}
+
+@media (min-width: 768px) {
+  .servicios {
+    flex-direction: row;
+    display: block;
+    align-items: center;
+  }
+
+  .sombra{
+
+    padding: auto;
+    width: auto 0;
+    height: auto 0;
+  }
+}
+/* Corregir codigo aqui  */
+@media (max-width: 480px) {
+  .servicios {
+  
+   flex-direction: column;
+    align-items: center;
+   
+  }
+/* Corregir codigo aqui  */
+  .sombra{
+
+    padding: .5rem;
+   
+  margin-bottom: .5rem;
+  
+  }
+}
+
+.content-info p{
+
+color:var(--negro);
 
 }
