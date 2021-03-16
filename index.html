@@ -63,7 +63,7 @@
           </svg>
           <p>Santa Marta Colombia</p>
         </div>
-        <a href="https://wa.me/message/UW25TQGKRPZWO1" class="boton"
+        <a href="https://wa.me/message/UW25TQGKRPZWO1" target="_blank" class="boton"
           >Contactar</a
         >
       </div>
@@ -94,7 +94,12 @@
             <p>-<cite>Creacion de sitios y aplicaciones web</cite></p>
             <p>- <cite>Mantenimientos de sitios y aplicaciones web. </cite></p>
             <p>-<cite>Definicion de interfaz gráfica</cite></p>
-            <p>-<cite>Mantenimiento de arquitectura y funcionalidad de cualquier sitio</cite></p>
+            <p>
+              -<cite
+                >Mantenimiento de arquitectura y funcionalidad de cualquier
+                sitio</cite
+              >
+            </p>
           </div>
         </div>
 
@@ -162,6 +167,19 @@
       </main>
     </div>
 
-    <footer></footer>
+    <footer class="footer">
+      <p id="mostrar">Santander Acuña &copy; <span id="p"> </span></p>
+    </footer>
+
+    <script>
+      var p = document.getElementById("p");
+      const fecha = new Date();
+      const añoActual = fecha.getFullYear();
+      console.log(p); //2021
+      p.innerHTML = añoActual;
+      let mostrar = document.getElementById("mostrar");
+
+      mostrar.appendChild(p);
+    </script>
   </body>
 </html>
